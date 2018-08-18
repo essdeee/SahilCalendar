@@ -51,8 +51,8 @@ with open(filepath,'rb') as csvfile:
 					if(currentDate): # If string is not empty
 						dateConverted = datetime.datetime.strptime(currentDate, '%m/%d/%y').strftime('%Y-%m-%d')
 						datesArrayConverted.append(dateConverted)
-				datesParsed.append(datesArrayConverted)					
-					
+				datesParsed.append(datesArrayConverted)
+
 	# Map the months to the dates (mapping: month -> array of dates)
 	numberOfMonths = len(monthsParsed)
 	for i in range(0, numberOfMonths):
